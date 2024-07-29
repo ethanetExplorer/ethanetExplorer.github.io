@@ -23,12 +23,18 @@ p {
   font-weight: 300;
 }
 
+nav a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
 #intro-section {
   height: calc(100vh);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   background-color: #020409;
 }
 
@@ -44,16 +50,25 @@ p {
 }
 
 #intro-section p {
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+#intro-section a {
+  text-decoration: none;
 }
 
 #intro-skills-section img {
   width: 40px;
-  padding: 8px;
-  text-decoration: none;
+  margin: 8px;
+  transition-duration: 0.2s;
+}
+
+#intro-skills-section img:hover {
+  width: 40px;
+  opacity: 0.6;
 }
 
 #inrtro-skills-section a {
@@ -62,6 +77,16 @@ p {
 
 #projects-section {
   margin-bottom: 16px;
+}
+
+#projects-section a {
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+
+#projects-section a:hover {
+  text-decoration: none;
+  opacity: 0.75;
 }
 
 #projects-section-header {
@@ -90,6 +115,8 @@ p {
 
 #project-item-header {
   display: flex;
+  justify-content: space-between;
+  align-items: top;
 }
 
 #project-item-header img {
@@ -99,6 +126,19 @@ p {
 #project-item-header h2,
 #project-item-header h3 {
   margin: 0;
+}
+
+#project-item-subheader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#project-year {
+  text-wrap: none;
+  color: #888b8f;
+  font-size: 20px;
+  margin: 0px 4px;
 }
 
 .moneyrush {
