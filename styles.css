@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
 body {
-  background-color: #272931;
-  color: #f2ede8;
+  background-color: #0d1116;
   font-family: "Nunito Sans", sans-serif;
   height: 100%;
   margin: 0;
@@ -10,15 +9,32 @@ body {
   width: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #b2b6be;
+}
+
+p {
+  color: #e2e2e2;
+  font-weight: 300;
+}
+
 #intro-section {
-  height: calc(80vh);
+  height: calc(100vh);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f2ede825;
-  border-radius: 12px;
-  margin: 24px;
+  background-color: #020409;
+}
+
+#intro-subsection {
+  text-align: center;
+  margin: 8px;
 }
 
 #intro-section h1 {
@@ -31,17 +47,60 @@ body {
   font-size: 18px;
   margin: 0;
   padding: 0;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 #intro-skills-section img {
-  width: 24px;
+  width: 40px;
   padding: 8px;
-  background: #f2ede825;
-  border-radius: 4px;
-  margin: 4px;
+  text-decoration: none;
+}
+
+#inrtro-skills-section a {
+  text-decoration: none;
+}
+
+#projects-section {
+  margin-bottom: 16px;
+}
+
+#projects-section-header {
+  padding-left: 20px;
+}
+
+#projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 2fr));
+
+  align-items: top;
+}
+@media (max-width: 650px) {
+  #projects-list {
+    flex-direction: column;
+  }
 }
 
 #project-item {
+  border: 1px solid #515151;
+  border-radius: 8px;
 
+  padding: 8px 4px 4px 12px;
+  margin: 4px 12px 12px 12px;
+}
+
+#project-item-header {
+  display: flex;
+}
+
+#project-item-header img {
+  padding: 0px 12px 0px 0px;
+}
+
+#project-item-header h2,
+#project-item-header h3 {
+  margin: 0;
+}
+
+.moneyrush {
+  color: #82baa4;
 }
