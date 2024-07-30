@@ -29,6 +29,11 @@ p {
   font-weight: 300;
 }
 
+hr {
+  border-color: #ddcdb4;
+  margin: 0px 12px 0px 12px;
+}
+
 nav a {
   text-decoration: none;
   font-size: 16px;
@@ -118,7 +123,6 @@ nav a {
 .project-item {
   border: 1px solid #515151;
   border-radius: 8px;
-
   padding: 8px 4px 4px 12px;
   margin: 4px 12px 12px 12px;
 }
@@ -126,11 +130,10 @@ nav a {
 .project-item-header {
   display: flex;
   justify-content: space-between;
-  align-items: top;
 }
 
 .project-item-header img {
-  padding: 0px 12px 0px 0px;
+  padding: 0px 16px 0px 0px;
 }
 
 .project-item-header h2,
@@ -144,6 +147,10 @@ nav a {
   align-items: center;
 }
 
+.project-description {
+  margin: 16px 0px 12px 0px;
+}
+
 .project-year {
   text-wrap: none;
   color: #888b8f;
@@ -155,24 +162,62 @@ nav a {
   color: #82baa4;
 }
 
+#skills-section-header {
+  margin: 12px 0px 0px 12px;
+}
+.skills-section-subheader {
+  margin: 0px 0px 0px 12px;
+}
+
+.skills-list {
+  display: flex;
+  margin: 0px 0px 128px 0px; /* to modify when adding more content*/
+}
+
 .skill-item {
   display: flex;
-  padding: 4px 8px 4px 8px;
   align-items: center;
-  background: #0d1116;
+  margin: 0px 12px 0px 12px;
 }
 
 .skills-list img {
-  width: 40px;
-  padding: 8px;
+  width: 36px;
+  padding: 0px;
+  margin: 0px 8px 0px 12px;
 }
 
 .skill-text {
+  margin: 0px 0px 0px 0px;
   display: flex;
   flex-direction: column;
 }
 
-.skill-text h3,
-p {
-  margin: 2px;
+.skill-text p {
+  color: #cccccc;
+  font-size: 16px;
+  margin: 0;
+}
+
+#skill-text-js {
+  color: #fdd642;
+}
+
+#skill-text-html {
+  color: #f96c45;
+}
+
+#skill-text-css {
+  color: #397dc1;
+}
+
+#skill-text-react {
+  color: #6cdaf8;
+}
+
+#skill-text-swift {
+  color: #f95833;
+}
+
+#skill-text-python {
+  color: #397ab0;
 }
