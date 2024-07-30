@@ -49,6 +49,11 @@ nav a {
   border-radius: 0px 0px 12px 12px;
   margin-bottom: 48px;
 }
+@media (max-width: 650px) {
+  #intro-section {
+    height: calc(100vh);
+  }
+}
 
 #intro-subsection {
   text-align: center;
@@ -59,6 +64,17 @@ nav a {
   font-weight: 700;
   font-size: 40px;
   margin: 12px 0px 12px 0px;
+}
+
+#intro-section p {
+  font-weight: 200;
+}
+
+@media (max-width: 650px) {
+  #intro-section h1 {
+    font-size: 32px;
+    flex-direction: column;
+  }
 }
 
 #intro-section p {
@@ -173,6 +189,11 @@ nav a {
   display: flex;
   margin: 0px 0px 128px 0px; /* to modify when adding more content*/
 }
+@media (max-width: 650px) {
+  .skills-list {
+    flex-direction: column;
+  }
+}
 
 .skill-item {
   display: flex;
@@ -194,6 +215,7 @@ nav a {
 
 .skill-text p {
   color: #cccccc;
+  font-weight: 200;
   font-size: 16px;
   margin: 0;
 }
@@ -219,5 +241,5 @@ nav a {
 }
 
 #skill-text-python {
-  color: #397ab0;
+  color: #448cc8;
 }
