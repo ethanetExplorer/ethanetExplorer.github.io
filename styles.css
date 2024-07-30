@@ -30,8 +30,8 @@ p {
 }
 
 hr {
-  border-color: #ddcdb4;
-  margin: 0px 12px 0px 12px;
+  border-color: #ddcdb450;
+  margin: 0px 128px 0px 128px;
 }
 
 nav a {
@@ -42,6 +42,7 @@ nav a {
 #intro-section {
   height: calc(100vh);
   display: flex;
+  background-color: #020409;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -104,7 +105,12 @@ nav a {
 }
 
 #projects-section {
-  margin-bottom: 16px;
+  margin: 0px 128px 16px 128px;
+}
+@media (max-width: 650px) {
+  #projects-section {
+    margin: 0px 12px 0px 12px;
+  }
 }
 
 #projects-section a {
@@ -127,7 +133,6 @@ nav a {
 #projects-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 2fr));
-
   align-items: top;
 }
 @media (max-width: 650px) {
@@ -178,6 +183,15 @@ nav a {
   color: #82baa4;
 }
 
+#skills-section {
+  margin: 0px 128px 0px 128px;
+}
+@media (max-width: 650px) {
+  #skills-section {
+    margin: 0px 12px 0px 12px;
+  }
+}
+
 #skills-section-header {
   margin: 12px 0px 0px 12px;
 }
@@ -197,8 +211,14 @@ nav a {
 
 .skill-item {
   display: flex;
+  width: 160px;
   align-items: center;
   margin: 0px 12px 0px 12px;
+}
+
+.skills-list {
+  flex-wrap: wrap;
+  margin: 0px;
 }
 
 .skills-list img {
