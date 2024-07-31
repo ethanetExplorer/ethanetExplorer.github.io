@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 body {
-  background-color: #0d1116;
+  position: sticky;
+
+  background: #2b2217;
+  background: linear-gradient(180deg, #2b2217 0%, #20303c 100%);
   font-family: "Nunito Sans", sans-serif;
   height: 100%;
-  margin: 0;
+  margin: 0px 0px 64px 0px;
   padding: 0;
   width: 100%;
 }
@@ -30,7 +33,7 @@ p {
 }
 
 hr {
-  border-color: #ddcdb450;
+  border-color: #ddcdb400;
   margin: 0px 128px 0px 128px;
 }
 
@@ -40,19 +43,18 @@ nav a {
 }
 
 #intro-section {
-  height: calc(100vh);
+  height: calc(98vh);
   display: flex;
-  background-color: #020409;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 4px 48px 0px #ffffff50;
-  border-radius: 0px 0px 12px 12px;
-  margin-bottom: 48px;
+  box-shadow: 0px 4px 12px 0px #ffffff50;
+  border-radius: 12px 12px 12px 12px;
+  margin: 12px 12px 64px 12px;
 }
 @media (max-width: 650px) {
   #intro-section {
-    height: calc(100vh);
+    height: calc(98vh);
   }
 }
 
@@ -104,12 +106,21 @@ nav a {
   text-decoration: none;
 }
 
-#projects-section {
-  margin: 0px 128px 16px 128px;
+#projects-section,
+#skills-section {
+  margin: 0px 16px 64px 16px;
+  padding: 02px 16px 24px 12px;
+  border-radius: 12px;
+  background-color: #0d111650;
+  box-shadow: 0px 0px 12px 10px #84848450;
 }
 @media (max-width: 650px) {
-  #projects-section {
-    margin: 0px 12px 0px 12px;
+  #projects-section,
+  #skills-section {
+    margin: 24px 20px 24px 20px;
+  }
+  #intro-section {
+    margin: 0px 20px 64px 20px;
   }
 }
 
@@ -142,10 +153,12 @@ nav a {
 }
 
 .project-item {
+  background-color: #0d111675;
   border: 1px solid #515151;
+  box-shadow: 0px 0px 8px 0px #ffffff50;
   border-radius: 8px;
   padding: 8px 4px 4px 12px;
-  margin: 4px 12px 12px 12px;
+  margin: 4px 20px 24px 12px;
 }
 
 .project-item-header {
@@ -169,7 +182,7 @@ nav a {
 }
 
 .project-description {
-  margin: 16px 0px 12px 0px;
+  margin: 12px 12px 12px 4px;
 }
 
 .project-year {
@@ -183,20 +196,14 @@ nav a {
   color: #82baa4;
 }
 
-#skills-section {
-  margin: 0px 128px 0px 128px;
-}
 @media (max-width: 650px) {
   #skills-section {
     margin: 0px 12px 0px 12px;
   }
 }
 
-#skills-section-header {
-  margin: 12px 0px 0px 12px;
-}
 .skills-section-subheader {
-  margin: 0px 0px 0px 12px;
+  margin: 0px 0px -12px 0px;
 }
 
 .skills-list {
@@ -218,7 +225,7 @@ nav a {
 
 .skills-list {
   flex-wrap: wrap;
-  margin: 0px;
+  margin: -8px 0px 0px 0px;
 }
 
 .skills-list img {
