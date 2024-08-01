@@ -143,10 +143,21 @@ nav a {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 650px) {
+  #projects-section-header h1,
+  #skills-section-header {
+    font-size: 20px;
+  }
+  #projects-section-header h3,
+  .skills-section-subheader h3 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
 
 #projects-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
   align-items: top;
 }
 @media (max-width: 650px) {
@@ -175,9 +186,16 @@ nav a {
 
 .project-item-header h2,
 .project-item-header h3 {
-  margin: 0;
+  margin: 0px 2px 0px 0px;
 }
-
+@media (max-width: 650px) {
+  .project-item-header h2 {
+    font-size: 18px;
+  }
+  .project-item-header h3 {
+    font-size: 16px;
+  }
+}
 .project-item-subheader {
   display: flex;
   flex-direction: row;
@@ -207,6 +225,11 @@ nav a {
 
 .skills-section-subheader {
   margin: 0px 0px -12px 0px;
+}
+
+.skills-section-subheader h3 {
+  margin: -4px 8px 20px 2px;
+  font-weight: 400;
 }
 
 .skills-list {
