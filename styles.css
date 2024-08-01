@@ -43,16 +43,16 @@ nav a {
 }
 
 #intro-section {
-  height: calc(98vh);
+  height: calc(95vh);
   border: 0.25px solid #75757575;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #50505050;
+  background: #30303050;
   box-shadow: 0px 4px 12px 0px #ffffff25;
   border-radius: 12px 12px 12px 12px;
-  margin: 12px 12px 64px 12px;
+  margin: 24px 12px 64px 12px;
 }
 @media (max-width: 650px) {
   #intro-section {
@@ -114,7 +114,7 @@ nav a {
   border: 0.25px solid #75757575;
   padding: 02px 16px 24px 12px;
   border-radius: 12px;
-  background-color: #50505050;
+  background-color: #30303060;
   box-shadow: 0px 0px 12px 10px #84848425;
 }
 @media (max-width: 650px) {
@@ -156,7 +156,7 @@ nav a {
 }
 
 .project-item {
-  background-color: #50505050;
+  background-color: #30303050;
   border: 0.25px solid #75757575;
   box-shadow: 0px 0px 8px 0px #84848425;
   border-radius: 8px;
@@ -211,6 +211,7 @@ nav a {
 
 .skills-list {
   display: flex;
+  padding: 0px 0px 12px 0px;
   margin: 0px 0px 128px 0px; /* to modify when adding more content*/
 }
 @media (max-width: 650px) {
@@ -221,9 +222,9 @@ nav a {
 
 .skill-item {
   display: flex;
-  width: 160px;
+  width: 200px;
   align-items: center;
-  margin: 0px 12px 0px 12px;
+  margin: 0px 12px 12px 12px;
 }
 
 .skills-list {
@@ -241,6 +242,10 @@ nav a {
   margin: 0px 0px 0px 0px;
   display: flex;
   flex-direction: column;
+}
+
+.skill-text h3 {
+  margin: 0px 0px 0px 0px;
 }
 
 .skill-text p {
